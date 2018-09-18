@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Video:</strong>
-  <%= @lesson.video %>
+ <%= video_tag @lesson.video_url, size: "640x480", autoplay: true, controls: true, autobuffer: true %>
 </p>
 
 <%= link_to 'Edit', edit_lesson_path(@lesson) %> |
